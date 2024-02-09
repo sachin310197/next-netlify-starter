@@ -61,7 +61,7 @@ export default async (req, res) => {
     username: username,
     language: req.body.language,
     platform: req.body.platform,
-    isVerified: false,
+    isVerified: true,
     countryCode: geo == null ? 'US' : geo.country,
     timezone: req.body.timezone,
     lastLogin: Date.now()
